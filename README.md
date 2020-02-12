@@ -1,4 +1,7 @@
 # sxhkd-statusd
+
+![4 terminals are showing sxhkd status](./img/demo.png)
+
 The daemon redirects [sxhkd](https://github.com/baskerville/sxhkd) status
 from named pipe to unix domain socket for accessing from multiple clients.
 

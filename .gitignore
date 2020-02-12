@@ -29,6 +29,7 @@
 *.dylib
 
 # Executables
+sxhkd-statusd
 *.exe
 *.out
 *.app
