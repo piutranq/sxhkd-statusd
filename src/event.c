@@ -44,7 +44,7 @@ void sxhkd_event(int pipe_fd) {
     msg_sxhkd(pipe_fd, msg);
 
     for (int ifd = 3; ifd < FD_SETSIZE; ifd++)
-        send(ifd, msg, strlen(msg), 0);
+        send(ifd, msg, strlen(msg), MSG_NOSIGNAL);
 }
 
 /* If event occured on the clients, handle the client event. */
