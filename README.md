@@ -43,5 +43,5 @@ The clients can access sxhkd-statusd by connect to `[source].sxhkd-statusd`
 sxhkd-statusd -l error /run/user/$UID/sxhkd.fifo
 
 # Connect to the daemon from a client process
-socat UNIX_CONNECT:/run/user/$UID/sxhkd.fifo.sxhkd-statusd -
+socat UNIX-CONNECT:/run/user/$UID/sxhkd.fifo.sxhkd-statusd -
 ```
