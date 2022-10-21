@@ -5,16 +5,16 @@
 The daemon redirects [sxhkd](https://github.com/baskerville/sxhkd) status
 from named pipe to unix domain socket for accessing from multiple clients.
 
-## How to install
-- Just make and make install. for default, the binary placed at `/usr/local/bin`.
-```bash
+## Installation
+- Just `make` and `make install.` By default, the binary placed at `/usr/local/bin`.
+```sh
 git clone https://github.com/piutranq/sxhkd-statusd
 cd ./sxhkd-statusd
 make
 sudo make install
 ```
 
-- When uninstall it, use `make uninstall`
+- To uninstall, use `make uninstall`
 
 ## Usage
 ```
@@ -38,7 +38,7 @@ The clients can access sxhkd-statusd by connect to `[source].sxhkd-statusd`
     - `silent`: Do not log any messages, including the error messages.
 
 ### example
-```bash
+```sh
 # Launch the daemon
 sxhkd-statusd -l error /run/user/$UID/sxhkd.fifo
 
